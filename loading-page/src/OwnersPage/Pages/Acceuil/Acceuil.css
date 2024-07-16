@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Athiti:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Kitsch-Extrabold-Italic-trial';
+    src: url('../../../Assets/Font/Kitsch-Extrabold-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fine-blackboard';
+    src: url('../../../Assets/Font/fine-blackboard.ttf') format('truetype');
+}
+
+.Acceuil {
+    position: relative;
+    height: auto;
+    min-height: 45vw;
+    background: url(./backdog.png) no-repeat center;
+    background-size: cover;
+    margin-top: 70px;
+    padding: 20px 0;
+
+}
+
+.heading-container {
+
+    align-items: left;
+    margin: 110px;
+    background: rgba(255, 255, 255, 0.654);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 650px;
+}
+
+.main-heading  {    
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    animation: FadIn 3s;
+}
+
+.description {
+    font-size: clamp(1em, 2vw, 1.5em);
+    margin-bottom: 20px;
+    font-family: 'Athiti', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.str1{
+    max-width: 250px;
+        max-height: 100px;
+        cursor: pointer;
+        font-size: clamp(16px, 2vw, 20px);
+}
+.str2 {
+    max-width: 240px;
+    max-height: 100px;
+    cursor: pointer;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.review-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Athiti', sans-serif;
+}
+
+.review-text {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.star-rating {
+    font-size: 1.2em;
+    color: gold;
+}
+
+.review-count {
+    font-size: 1em;
+}
+
+@keyframes FadIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .Acceuil {
+        min-height: 70vw;
+        padding: 10px 0;
+    }
+
+    .heading-container {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .main-heading {
+        font-size: clamp(2em, 5vw, 3em);
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Acceuil-sub {
+        font-size: clamp(18px, 2.5vw, 22px);
+        padding: 5px 20px;
+    }
+}
+

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+.header-container-sitter {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(160, 158, 158);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-container-sitter .logo-sitter {
+    width: 150px;
+}
+
+.nav-links-sitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.nav-links-sitter a {
+    list-style: none;
+    margin: 0 20px;
+    padding: 10px;
+    color: rgba(3, 110, 130, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-links-sitter li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-container-sitter .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(176, 207, 203, 1);
+}
+
+.sitters {
+    border: 2px solid rgba(3, 110, 130, 1);
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.sitters:hover {
+    background-color: rgba(176, 207, 203, 1);
+    color: rgba(3, 110, 130, 1);
+}
+
+
+.content {
+    margin-top: 70px;
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(160, 158, 158);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-container .logo {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+    color: rgba(3, 110, 130, 1);
+    font-size: 18px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-container .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(176, 207, 203, 1);
+}
+
+.nav-links li.sitters {
+    background-color: rgba(3, 110, 130, 1);
+    color: #ffffff;
+    border: 2px solid rgba(3, 110, 130, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-links li.sitters:hover {
+    background-color: rgba(176, 207, 203, 1);
+    color: rgba(3, 110, 130, 1);
+}
+
+/* Add margin to the content below the fixed navbar */
+.content {
+    margin-top: 70px;
+    /* Adjust this value based on the height of your navbar */
+}

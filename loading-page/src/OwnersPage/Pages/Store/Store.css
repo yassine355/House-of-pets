@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.app-title {
+    color: rgba(244, 123, 104, 1);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.new-buttons {
+    display: flex;
+    gap: 150px;
+    width: 100%;
+    height: 100px;
+}
+
+.ios, .android {
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
